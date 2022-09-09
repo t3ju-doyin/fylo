@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bg-mobile.png");
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+body section {
+  background-color: hsl(228deg, 56%, 26%);
+  border-radius: 8px;
+}
+
+main {
+  width: 85%;
+  margin-inline: auto;
+  max-width: 400px;
+  position: relative;
+}
+main section.images {
+  margin-bottom: 1rem;
+  padding: 2rem 0 2rem 2rem;
+  border-top-right-radius: 90px;
+}
+main section.images .images-container .logo {
+  margin-bottom: 1.5rem;
+}
+main section.images .images-container .logo img {
+  width: 40%;
+}
+main section.images .images-container .storage-images {
+  display: flex;
+  gap: 1rem;
+}
+main section.images .images-container .storage-images .image {
+  background-color: hsl(229deg, 57%, 11%);
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+main section.images .images-container .storage-images .image img {
+  width: 95%;
+  align-self: center;
+}
+main section.storage-info {
+  padding: 1.5rem 0 2.5rem 0;
+}
+main section.storage-info .storage-info-container {
+  width: 85%;
+  margin-inline: auto;
+}
+main section.storage-info .storage-info-container > p {
+  text-align: center;
+  font-size: 0.75rem;
+  color: hsl(229deg, 7%, 55%);
+  margin-bottom: 1rem;
+}
+main section.storage-info .storage-info-container .number {
+  color: hsl(243deg, 100%, 93%);
+  font-weight: 600;
+}
+main section.storage-info .storage-info-container div.storage-capacity {
+  height: 1rem;
+  border-radius: 0.9rem;
+  background-color: hsla(229deg, 57%, 11%, 0.39);
+  margin-bottom: 0.6rem;
+}
+main section.storage-info .storage-info-container div.storage-capacity .storage-level {
+  position: relative;
+  top: 0.14rem;
+  left: 0.18rem;
+  height: 0.7rem;
+  background: linear-gradient(91deg, hsl(6deg, 100%, 80%) 0%, hsl(335deg, 100%, 65%) 80%);
+  width: 70%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+main section.storage-info .storage-info-container div.storage-capacity .storage-level .current-level {
+  position: relative;
+  right: 0.1rem;
+  top: 0.05rem;
+  height: 0.6rem;
+  background-color: hsl(243deg, 100%, 93%);
+  border-radius: 50%;
+  width: 6%;
+  max-width: 10px;
+}
+main section.storage-info .storage-info-container .min-max {
+  font-size: 0.65rem;
+  display: flex;
+  justify-content: space-between;
+}
+main section.storage-left {
+  position: relative;
+  bottom: 2rem;
+  background-color: hsl(243deg, 100%, 93%);
+  width: 35%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+  box-shadow: -2px 2px 34px -8px rgba(0, 0, 0, 0.75);
+}
+main section.storage-left .storage-left-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+main section.storage-left .storage-left-container h2 {
+  color: hsl(229deg, 57%, 11%);
+  font-weight: 700;
+}
+main section.storage-left .storage-left-container p {
+  color: hsl(229deg, 7%, 55%);
+  letter-spacing: 0.03rem;
+  font-weight: 700;
+  font-size: 0.5rem;
+}
+
+@media (min-width: 750px) {
+  body {
+    background-color: hsl(229deg, 57%, 11%);
+    background-image: url("bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% bottom;
+  }
+  main {
+    max-width: 800px;
+  }
+  main div.main-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+  main section.images {
+    flex-basis: 40%;
+    margin: 0;
+  }
+  main section.storage-info {
+    flex-basis: 60%;
+    align-self: flex-end;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main section.storage-info .storage-info-container > p {
+    text-align: left;
+    margin-bottom: 0.8rem;
+  }
+  main section.storage-left {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 76%, 100% 66%, 89% 49%, 0 48%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 76%, 100% 66%, 89% 49%, 0 48%);
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+    padding: 0.5rem 0.5rem 3.5rem 0.5rem;
+    width: 20%;
+    border-bottom-left-radius: 8px;
+  }
+  main section.storage-left .storage-left-container {
+    background-color: hsl(243deg, 100%, 93%);
+  }
+}/*# sourceMappingURL=fylo.css.map */
